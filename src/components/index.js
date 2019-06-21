@@ -1,3 +1,4 @@
+export * from './VApp'
 export * from './VBtn'
 export * from './VCard'
 export * from './VGrid'
