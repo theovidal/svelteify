@@ -1,5 +1,6 @@
 <script>
   export let align = "";
+  export let classes = "";
   export let column = false;
   export let d = "";
   export let fill_height = false;
@@ -16,7 +17,8 @@
 <div
   class="layout {alignClass}
   {justifyClass}
-  {dClass}"
+  {dClass}
+  {classes}"
   class:column
   class:fill-height={fill_height}
   class:reverse

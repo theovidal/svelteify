@@ -1,5 +1,6 @@
 <script>
   export let align = "";
+  export let classes = "";
   export let justify = "";
   export let grid_list = "";
   export let d = "";
@@ -16,7 +17,8 @@
   class="container {alignClass}
   {justifyClass}
   {gridListClass}
-  {dClass}"
+  {dClass}
+  {classes}"
   class:fluid
   class:fill-height={fill_height}>
   <slot />
