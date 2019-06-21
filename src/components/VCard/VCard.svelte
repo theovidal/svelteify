@@ -6,8 +6,9 @@
   export let raised = false;
 </script>
 
-<div class="v-card {color} elevation-{elevation}"
+<div class="v-card v-sheet {color} elevation-{elevation}"
 		 class:v-card--flat={flat}
-		 class:v-card--hover={hover}>
+		 class:v-card--hover={hover}
+		 class:v-card--raised={raised}>
 	<slot></slot>
 </div>
