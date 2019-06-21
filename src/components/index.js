@@ -1,4 +1,5 @@
 export * from './VBtn'
 export * from './VCard'
+export * from './VGrid'
 export * from './VImg'
 export * from './VToolbar'
