@@ -1,0 +1,12 @@
+.v-toolbar.v-toolbar--dense > .v-toolbar__content {
+  height: 48px;
+}
+.v-toolbar.v-toolbar--extended > .v-toolbar__content, .v-toolbar__extension {
+  height: 64px;
+}
+.v-toolbar > .v-toolbar__content {
+  height: 58px;
+}
+.v-toolbar__extension.v-toolbar--tabs {
+  height: 48px;
+}
