@@ -1,3 +1,3 @@
 <div class="v-card__actions">
-    <slot></slot>
+  <slot />
 </div>

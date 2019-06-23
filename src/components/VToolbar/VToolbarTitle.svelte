@@ -1,5 +1,5 @@
 <script>
-  export let classes = "";
+  export let classes = ''
 </script>
 
 <div class="v-toolbar__title {classes}">

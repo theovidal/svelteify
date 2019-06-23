@@ -1,3 +1,3 @@
 <div class="v-card__text">
-    <slot></slot>
+  <slot />
 </div>

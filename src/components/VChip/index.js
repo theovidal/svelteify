@@ -1,4 +1,4 @@
-import VChip from "./VChip.svelte";
+import VChip from './VChip.svelte'
 
-export { VChip };
-export default VChip;
+export { VChip }
+export default VChip

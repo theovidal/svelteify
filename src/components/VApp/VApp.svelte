@@ -1,8 +1,8 @@
 <script>
-  import { setContext} from 'svelte'
+  import { setContext } from 'svelte'
 
-  export let id = 'inspire';
-  export let dark = false;
+  export let id = 'inspire'
+  export let dark = false
 
   setContext('svelteify-app', {
     theme: {
@@ -12,10 +12,13 @@
   })
 </script>
 
-<div {id} class="application"
-          class:theme--dark={dark}
-          class:theme--light={!dark}
-          data-app="true">
+<div
+  {id}
+  class="application"
+  class:theme--dark="{dark}"
+  class:theme--light="{!dark}"
+  data-app="true"
+>
   <div class="application--wrap">
     <slot />
   </div>
