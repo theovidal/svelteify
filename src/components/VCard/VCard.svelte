@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from 'svelte'
+  import { theme } from '../../stores/theme'
 
   export let color = ''
   export let dark = false
@@ -16,15 +16,14 @@
   export let tile = false
   export let width = ''
 
-  const { theme } = getContext('svelteify-app')
   let darkTheme = false
 
-  if (dark) {
+  $: if (dark) {
     darkTheme = true
   } else if (light) {
     darkTheme = false
   } else {
-    darkTheme = theme.dark
+    darkTheme = $theme.dark
   }
 </script>
 

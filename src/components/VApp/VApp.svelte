@@ -1,14 +1,12 @@
 <script>
-  import { setContext } from 'svelte'
+  import { theme } from '../../stores/theme'
 
   export let id = 'inspire'
   export let dark = false
 
-  setContext('svelteify-app', {
-    theme: {
-      dark,
-      light: !dark
-    }
+  $: theme.set({
+    dark,
+    light: !dark
   })
 </script>
 

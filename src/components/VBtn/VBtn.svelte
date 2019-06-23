@@ -1,5 +1,6 @@
 <script>
-  import { createEventDispatcher, getContext } from 'svelte'
+  import { createEventDispatcher } from 'svelte'
+  import { theme } from '../../stores/theme'
 
   export let absolute = false
   export let block = false
@@ -25,15 +26,14 @@
   export let small = false
   export let top = false
 
-  const { theme } = getContext('svelteify-app')
   let darkTheme = false
 
-  if (dark) {
+  $: if (dark) {
     darkTheme = true
   } else if (light) {
     darkTheme = false
   } else {
-    darkTheme = theme.dark
+    darkTheme = $theme.dark
   }
 
   const dispatch = createEventDispatcher()

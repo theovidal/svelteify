@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from 'svelte'
+  import { theme } from '../../stores/theme'
   import { VIcon } from '../VIcon'
 
   export let close = false
@@ -12,15 +12,14 @@
   export let selected = false
   export let small = false
 
-  const { theme } = getContext('svelteify-app')
   let darkTheme = false
 
-  if (dark) {
+  $: if (dark) {
     darkTheme = true
   } else if (light) {
     darkTheme = false
   } else {
-    darkTheme = theme.dark
+    darkTheme = $theme.dark
   }
 
   let default_selected = selected
