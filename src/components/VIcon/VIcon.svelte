@@ -1,14 +1,29 @@
 <script>
-  export let color = "";
+  import { getContext } from 'svelte'
+
+  export let color = '';
   export let dark = false;
   export let large = false;
   export let left = false;
+  export let light = false;
   export let medium = false;
   export let right = false;
   export let small = false;
   export let size = undefined;
   export let xlarge = false;
-  let light = dark ? false : true;
+
+  const { theme } = getContext('svelteify-app')
+  let darkTheme = false
+
+  if (dark) {
+    darkTheme = true
+  }
+  else if (light) {
+    darkTheme = false
+  }
+  else {
+    darkTheme = theme.dark
+  }
 
   if (size === undefined) {
     if (small) {
@@ -28,8 +43,8 @@
   aria-hidden="true"
   class:v-icon--left={left}
   class:v-icon--right={right}
-  class:theme--dark={dark}
-  class:theme-light={light}
+  class:theme--dark={darkTheme}
+  class:theme--light={!darkTheme}
   style={size === undefined ? '' : `font-size: ${size}px`}>
   <slot />
 </i>

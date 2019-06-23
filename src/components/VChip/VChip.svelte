@@ -1,4 +1,5 @@
 <script>
+  import { getContext } from 'svelte'
   import { VIcon } from '../VIcon'
 
   export let close = false;
@@ -6,12 +7,25 @@
   export let dark = false;
   export let disabled = false;
   export let label = false;
+  export let light = false;
   export let outline = false;
   export let selected = false;
   export let small = false;
 
+  const { theme } = getContext('svelteify-app')
+  let darkTheme = false
+
+  if (dark) {
+    darkTheme = true
+  }
+  else if (light) {
+    darkTheme = false
+  }
+  else {
+    darkTheme = theme.dark
+  }
+
   let default_selected = selected;
-  let light = !dark;
   let style = ''
 
   function handleClose() {
@@ -38,8 +52,8 @@
      class:v-chip--removable={close}
      class:v-chip--selected={selected}
      class:v-chip--small={small}
-     class:theme--dark={dark}
-     class:theme--light={light}
+     class:theme--dark={darkTheme}
+     class:theme--light={!darkTheme}
      {style}
      on:click={handleClick}
      on:mouseleave={handleLeave}>
