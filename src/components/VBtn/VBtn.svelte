@@ -1,7 +1,10 @@
 <script>
+  import { createEventDispatcher, getContext } from 'svelte';
+
   export let absolute = false;
   export let block = false;
   export let bottom = false;
+  export let classes = '';
   export let column = false;
   export let color = "";
   export let dark = false;
@@ -15,16 +18,38 @@
   export let icon = false;
   export let large = false;
   export let left = false;
+  export let light = false;
   export let outline = false;
   export let right = false;
   export let round = false;
   export let small = false;
   export let top = false;
-  let light = dark ? false : true;
+
+  const { theme } = getContext('svelteify-app')
+  let darkTheme = false
+
+  if (dark) {
+    darkTheme = true
+  }
+  else if (light) {
+    darkTheme = false
+  }
+  else {
+    darkTheme = theme.dark
+  }
+
+  const dispatch = createEventDispatcher();
+
+  function dispatchClick(event) {
+    dispatch('click', {
+        event
+    });
+  }
+
 </script>
 
 <a
-  class="v-btn {color}"
+  class="v-btn {color} {classes}"
   class:v-btn--absolute={absolute}
   class:v-btn--block={block}
   class:v-btn--bottom={bottom}
@@ -42,10 +67,11 @@
   class:v-btn--round={round}
   class:v-btn--small={small}
   class:v-btn--top={top}
-  class:theme--light={light}
-  class:theme--dark={dark}
+  class:theme--dark={darkTheme}
+  class:theme--light={!darkTheme}
   {href}
-  {target}>
+  {target}
+  on:click={dispatchClick}>
   <div class="v-btn__content">
     <slot />
   </div>
