@@ -1,5 +1,5 @@
 {
-  "name": "sveltify",
+  "name": "svelteify",
   "description": "Svelte integration of the Vuetify components framework.",
   "keywords": [
     "svelte",
@@ -7,7 +7,7 @@
     "vuetify",
     "components"
   ],
-  "homepage": "https://github.com/exybore/sveltify",
+  "homepage": "https://github.com/exybore/svelteify",
   "contributors": [
     {
       "name": "exybore",
@@ -21,11 +21,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/exybore/sveltify"
+    "url": "https://github.com/exybore/svelteify"
   },
   "license": "MIT",
   "version": "0.1.0",
-  "main": "dist/sveltify.js",
+  "main": "dist/svelteify.js",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
