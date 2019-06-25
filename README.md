@@ -1,7 +1,12 @@
 <div align=center>
-  <h1>Svelteify</h1>
-  <h3>Svelte integration of <a href="https://github.com/vuetifyjs/vuetify">Vuetify</a></h3>
-  <a href="LICENSE">License</a> - Documentation
+  <img src="./logo.png" alt="logo" width="150" />
+  <h2>Svelte integration of <a href="https://github.com/vuetifyjs/vuetify">Vuetify</a></h2>
+  <a href="#license">
+    <img src="https://img.shields.io/badge/license-MIT-green.svg" />
+  </a>
+  <a href="https://discord.becauseofprog.fr">
+    <img src="https://img.shields.io/badge/chat-join%20now-blue.svg" />
+  </a>
 </div>
 
 ## Setup
