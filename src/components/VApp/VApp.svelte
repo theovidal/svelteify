@@ -1,13 +1,16 @@
 <script>
-  import { theme } from '../../stores/theme'
+  import { theme as defaultTheme } from '../../stores/theme'
 
   export let id = 'inspire'
   export let dark = false
+  export let theme = {}
 
-  $: theme.set({
-    dark,
-    light: !dark
-  })
+  $: defaultTheme.set(
+    Object.assign({}, $defaultTheme, theme, {
+      dark,
+      light: !dark
+    })
+  )
 </script>
 
 <div

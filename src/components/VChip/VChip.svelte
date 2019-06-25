@@ -1,7 +1,9 @@
 <script>
-  import { theme } from '../../stores/theme'
   import { VIcon } from '../VIcon'
+  import { theme } from '../../stores/theme'
+  import { generateTheme } from '../../utils/theme'
 
+  // Component properties
   export let close = false
   export let color = ''
   export let dark = false
@@ -11,6 +13,9 @@
   export let outline = false
   export let selected = false
   export let small = false
+
+  // Theme-related operations
+  let { style, strColors } = generateTheme($theme, color)
 
   let darkTheme = false
 
@@ -22,11 +27,11 @@
     darkTheme = $theme.dark
   }
 
+  // Events handle
   let default_selected = selected
-  let style = ''
 
   function handleClose() {
-    style = 'display: none;'
+    style += 'display: none;'
   }
 
   function handleClick() {
@@ -43,7 +48,7 @@
 </script>
 
 <div
-  class="v-chip {color}"
+  class="v-chip {strColors}"
   class:v-chip--disabled="{disabled}"
   class:v-chip--label="{label}"
   class:v-chip--outline="{outline}"

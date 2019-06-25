@@ -1,5 +1,6 @@
 <script>
   import { theme } from '../../stores/theme'
+  import { generateTheme } from '../../utils/theme'
 
   export let absolute = false
   export let card = false
@@ -15,6 +16,9 @@
   export let light = false
   export let tabs = false
 
+  // Theme-related operations
+  let { style, strColors } = generateTheme($theme, color)
+
   let darkTheme = false
 
   $: if (dark) {
@@ -27,7 +31,7 @@
 </script>
 
 <div
-  class="v-toolbar {color} {classes}"
+  class="v-toolbar {strColors} {classes}"
   class:v-toolbar--absolute="{absolute}"
   class:v-toolbar--card="{card}"
   class:v-toolbar--clipped="{clipped}"
@@ -38,6 +42,7 @@
   class:elevation-0="{flat}"
   class:theme--dark="{darkTheme}"
   class:theme--light="{!darkTheme}"
+  {style}
 >
   <div class="v-toolbar__content">
     <slot />

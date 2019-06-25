@@ -1,7 +1,9 @@
 <script>
   import { createEventDispatcher } from 'svelte'
   import { theme } from '../../stores/theme'
+  import { generateTheme } from '../../utils/theme'
 
+  // Component properties
   export let absolute = false
   export let block = false
   export let bottom = false
@@ -26,6 +28,11 @@
   export let small = false
   export let top = false
 
+  // Theme-related operations
+  let colorable_background = !flat
+
+  let { style, strColors } = generateTheme($theme, color, colorable_background)
+
   let darkTheme = false
 
   $: if (dark) {
@@ -36,6 +43,7 @@
     darkTheme = $theme.dark
   }
 
+  // Events dispatch
   const dispatch = createEventDispatcher()
 
   function dispatchClick(event) {
@@ -46,7 +54,7 @@
 </script>
 
 <a
-  class="v-btn {color} {classes}"
+  class="v-btn {strColors} {classes}"
   class:v-btn--absolute="{absolute}"
   class:v-btn--block="{block}"
   class:v-btn--bottom="{bottom}"
@@ -68,6 +76,7 @@
   class:theme--light="{!darkTheme}"
   {href}
   {target}
+  {style}
   on:click="{dispatchClick}"
 >
   <div class="v-btn__content">
