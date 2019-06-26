@@ -9,6 +9,47 @@
   </a>
 </div>
 
+## Roadmap
+
+### 0.1
+
+Core features :
+
+- [X] Global theme
+- [ ] `app` properties on components
+- [ ] Documentation
+
+Components :
+
+- [X] Application
+- [X] Avatar
+- [X] Button
+- [X] Card
+- [X] Chips
+- [X] Footer
+- [X] Grid
+- [X] Icon
+- [X] Image
+- [ ] List
+- [X] Toolbar
+- [ ] Tooltip
+
+### 0.2
+
+Core features :
+
+- [ ] Icon choose
+
+Components :
+
+- [ ] Alerts
+- [ ] Badges
+- [ ] Bottom navigation
+- [ ] Breadcrumbs
+- [ ] Form inputs
+- [ ] Groups
+- [ ] Navigation drawer
+
 ## Setup
 
 ### Installation
