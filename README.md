@@ -26,11 +26,12 @@ Components :
 - [X] Button
 - [X] Card
 - [X] Chips
+- [X] Divider
 - [X] Footer
 - [X] Grid
 - [X] Icon
 - [X] Image
-- [ ] List
+- [X] List
 - [X] Toolbar
 - [ ] Tooltip
 
@@ -39,6 +40,8 @@ Components :
 Core features :
 
 - [ ] Icon choose
+- [ ] More theme options
+- [ ] Ripples
 
 Components :
 
