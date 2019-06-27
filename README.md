@@ -11,7 +11,7 @@
 
 ## Roadmap
 
-### 0.1
+### 1.0
 
 Core features :
 
@@ -35,7 +35,7 @@ Components :
 - [X] Toolbar
 - [ ] Tooltip
 
-### 0.2
+### 1.1
 
 Core features :
 
