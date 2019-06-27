@@ -6,7 +6,7 @@
     VToolbarItems,
     VDivider,
     VBtn
-  } from '../../../../sveltify/dist/svelteify'
+  } from '../../../../svelteify/dist/svelteify'
 
   export let props
 

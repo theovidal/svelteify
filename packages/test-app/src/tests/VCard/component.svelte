@@ -5,7 +5,7 @@
     VCardActions,
     VBtn,
     VImg
-  } from '../../../../sveltify/dist/svelteify'
+  } from '../../../../svelteify/dist/svelteify'
 
   export let props
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import { VFooter } from '../../../../sveltify/dist/svelteify'
+  import { VFooter } from '../../../../svelteify/dist/svelteify'
 
   export let props
   export let default_slot = true

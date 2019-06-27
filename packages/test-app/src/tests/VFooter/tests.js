@@ -1,4 +1,4 @@
-import { VBtn } from '../../../../sveltify/dist/svelteify'
+import { VBtn } from '../../../../svelteify/dist/svelteify'
 
 const VFooterTests = [
   {

@@ -1,4 +1,4 @@
-import { VIcon } from '../../../../sveltify/dist/svelteify'
+import { VIcon } from '../../../../svelteify/dist/svelteify'
 
 const VBtnTests = [
   {

@@ -1,5 +1,5 @@
 <script>
-  import { VChip } from '../../../../sveltify/dist/svelteify.js'
+  import { VChip } from '../../../../svelteify/dist/svelteify.js'
 
   export let props
   export let default_slot = true

@@ -1,4 +1,4 @@
-let VToolbarTests = [
+const VToolbarTests = [
   {
     name: 'Normal toolbar',
     props: {}

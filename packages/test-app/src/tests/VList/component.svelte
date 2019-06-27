@@ -14,7 +14,7 @@
     VListTileAvatar,
     VAvatar,
     VIcon
-  } from '../../../../sveltify/dist/svelteify'
+  } from '../../../../svelteify/dist/svelteify'
 
   export let props
 

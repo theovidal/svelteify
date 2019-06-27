@@ -1,4 +1,4 @@
-import { VIcon, VAvatar } from '../../../../sveltify/dist/svelteify'
+import { VIcon, VAvatar } from '../../../../svelteify/dist/svelteify'
 
 const VChipTests = [
   {

@@ -16,7 +16,7 @@
     VFlex,
     VLayout,
     VBtn
-  } from '../../sveltify/dist/svelteify.js'
+  } from '../../svelteify/dist/svelteify.js'
   import tests from './tests'
 
   let dark = true

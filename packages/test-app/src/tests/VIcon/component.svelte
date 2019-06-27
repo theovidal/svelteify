@@ -1,5 +1,5 @@
 <script>
-  import { VIcon } from '../../../../sveltify/dist/svelteify'
+  import { VIcon } from '../../../../svelteify/dist/svelteify'
 
   export let props
 </script>

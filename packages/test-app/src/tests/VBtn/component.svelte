@@ -1,5 +1,5 @@
 <script>
-  import { VBtn } from '../../../../sveltify/dist/svelteify'
+  import { VBtn } from '../../../../svelteify/dist/svelteify'
 
   export let props
   export let default_slot = true

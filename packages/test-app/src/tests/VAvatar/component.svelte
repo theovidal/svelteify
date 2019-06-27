@@ -1,5 +1,5 @@
 <script>
-  import { VAvatar } from '../../../../sveltify/dist/svelteify.js'
+  import { VAvatar } from '../../../../svelteify/dist/svelteify.js'
 
   export let props
 </script>
