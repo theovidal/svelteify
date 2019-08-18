@@ -1,18 +1,18 @@
 <script>
   import {
-    VCard,
-    VCardTitle,
-    VCardActions,
-    VBtn,
-    VImg
+    MCard,
+    MCardTitle,
+    MCardActions,
+    MBtn,
+    MImg
   } from '../../../../svelteify/dist/svelteify'
 
   export let props
 </script>
 
-<VCard {...props}>
-  <VImg src="foto.jpg" />
-  <VCardTitle primary_title>
+<MCard {...props}>
+  <MImg src="foto.jpg" />
+  <MCardTitle primary_title>
     <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
     <div>
       Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate
@@ -22,9 +22,9 @@
       adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id
       ludus appareat.
     </div>
-  </VCardTitle>
-  <VCardActions>
-    <VBtn flat color="orange--text">Share</VBtn>
-    <VBtn flat color="orange--text">Explore</VBtn>
-  </VCardActions>
-</VCard>
+  </MCardTitle>
+  <MCardActions>
+    <MBtn flat color="orange--text">Share</MBtn>
+    <MBtn flat color="orange--text">Explore</MBtn>
+  </MCardActions>
+</MCard>

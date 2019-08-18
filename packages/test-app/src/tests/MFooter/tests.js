@@ -1,6 +1,6 @@
-import { VBtn } from '../../../../svelteify/dist/svelteify'
+import { MBtn } from '../../../../svelteify/dist/svelteify'
 
-const VFooterTests = [
+const MFooterTests = [
   {
     name: 'Normal footer',
     props: {
@@ -28,21 +28,21 @@ const VFooterTests = [
     props: {},
     children: [
       {
-        component: VBtn,
+        component: MBtn,
         slot: 'Home',
         props: {
           flat: true
         }
       },
       {
-        component: VBtn,
+        component: MBtn,
         slot: 'Download',
         props: {
           flat: true
         }
       },
       {
-        component: VBtn,
+        component: MBtn,
         slot: 'About',
         props: {
           flat: true
@@ -52,4 +52,4 @@ const VFooterTests = [
   }
 ]
 
-export default VFooterTests
+export default MFooterTests

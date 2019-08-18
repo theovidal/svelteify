@@ -1,8 +1,8 @@
-const VListTests = [
+const MListTests = [
   {
     name: 'Some lists',
     props: {}
   }
 ]
 
-export default VListTests
+export default MListTests

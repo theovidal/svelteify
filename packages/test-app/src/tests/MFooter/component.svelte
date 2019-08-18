@@ -1,14 +1,14 @@
 <script>
-  import { VFooter } from '../../../../svelteify/dist/svelteify'
+  import { MFooter } from '../../../../svelteify/dist/svelteify'
 
   export let props
   export let default_slot = true
 </script>
 
-<VFooter {...props}>
+<MFooter {...props}>
   <slot />
   {#if default_slot}
   <div class="spacer"></div>
   <div>© 2019</div>
   {/if}
-</VFooter>
+</MFooter>

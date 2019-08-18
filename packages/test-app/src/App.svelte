@@ -1,21 +1,21 @@
 <script>
   import {
-    VApp,
-    VAvatar,
-    VFooter,
-    VChip,
-    VIcon,
-    VCard,
-    VCardTitle,
-    VCardActions,
-    VContainer,
-    VToolbar,
-    VToolbarTitle,
-    VToolbarItems,
-    VContent,
-    VFlex,
-    VLayout,
-    VBtn
+    MApp,
+    MAvatar,
+    MFooter,
+    MChip,
+    MIcon,
+    MCard,
+    MCardTitle,
+    MCardActions,
+    MContainer,
+    MToolbar,
+    MToolbarTitle,
+    MToolbarItems,
+    MContent,
+    MFlex,
+    MLayout,
+    MBtn
   } from '../../svelteify/dist/svelteify.js'
   import tests from './tests'
 
@@ -26,46 +26,46 @@
   }
 </script>
 
-<VApp {dark}>
-  <VToolbar fixed dense>
-    <VToolbarTitle>Svelteify test</VToolbarTitle>
-    <VToolbarItems>
-      <VBtn icon on:click="{changeTheme}">
-        <VIcon>invert_colors</VIcon>
-      </VBtn>
-    </VToolbarItems>
-  </VToolbar>
+<MApp {dark}>
+  <MToolbar fixed dense>
+    <MToolbarTitle>Svelteify test</MToolbarTitle>
+    <MToolbarItems>
+      <MBtn icon on:click="{changeTheme}">
+        <MIcon>invert_colors</MIcon>
+      </MBtn>
+    </MToolbarItems>
+  </MToolbar>
 
-  <VContent>
-    <VContainer grid_list="md" classes="mt-5">
-      <VLayout>
-        <VFlex size="xs12">
-          <VCard>
-            <VCardTitle primary_title>
+  <MContent>
+    <MContainer grid_list="md" classes="mt-5">
+      <MLayout>
+        <MFlex size="xs12">
+          <MCard>
+            <MCardTitle primary_title>
               <h3 class="headline mb-0">Svelteify tests</h3>
               <div>
                 Welcome to the official test platform of the Svelteify library !
                 Here, each component is displayed with different options in
                 order to test a maximum of them and see if there are bugs.
               </div>
-            </VCardTitle>
-            <VCardActions>
+            </MCardTitle>
+            <MCardActions>
               {#each tests as test}
-              <VBtn flat color="primary" href="#{test.name}">{test.name}</VBtn>
+              <MBtn flat color="primary" href="#{test.name}">{test.name}</MBtn>
               {/each}
-            </VCardActions>
-          </VCard>
-        </VFlex>
-      </VLayout>
-    </VContainer>
-    <VContainer grid_list="md" fluid>
+            </MCardActions>
+          </MCard>
+        </MFlex>
+      </MLayout>
+    </MContainer>
+    <MContainer grid_list="md" fluid>
       {#each tests as componentTest}
-      <VLayout row wrap>
-        <VFlex size="xs12">
+      <MLayout row wrap>
+        <MFlex size="xs12">
           <h1 id="{componentTest.name}">{componentTest.name}</h1>
-        </VFlex>
+        </MFlex>
         {#each componentTest.tests as test}
-        <VFlex size="xs5 offset-xs1">
+        <MFlex size="xs5 offset-xs1">
           <h2>{test.name}</h2>
           <svelte:component
             this="{componentTest.component}"
@@ -78,32 +78,32 @@
             </svelte:component>
             {/each} {/if}
           </svelte:component>
-        </VFlex>
+        </MFlex>
         {/each}
-      </VLayout>
+      </MLayout>
       {/each}
-    </VContainer>
+    </MContainer>
 
-    <VContainer grid_list="md">
-      <VLayout row wrap>
-        <VFlex size="xs12" classes="red lighten-2">12</VFlex>
-        <VFlex size="xs6" classes="red darken-2">6</VFlex>
-        <VFlex size="xs6" classes="red darken-2">6</VFlex>
-      </VLayout>
-    </VContainer>
-  </VContent>
+    <MContainer grid_list="md">
+      <MLayout row wrap>
+        <MFlex size="xs12" classes="red lighten-2">12</MFlex>
+        <MFlex size="xs6" classes="red darken-2">6</MFlex>
+        <MFlex size="xs6" classes="red darken-2">6</MFlex>
+      </MLayout>
+    </MContainer>
+  </MContent>
 
-  <VFooter fixed>
-    <VBtn flat>
+  <MFooter fixed>
+    <MBtn flat>
       Home
-    </VBtn>
-    <VBtn flat>
+    </MBtn>
+    <MBtn flat>
       Download
-    </VBtn>
-    <VBtn flat>
+    </MBtn>
+    <MBtn flat>
       About
-    </VBtn>
+    </MBtn>
     <div class="spacer"></div>
     <div>© 2019</div>
-  </VFooter>
-</VApp>
+  </MFooter>
+</MApp>

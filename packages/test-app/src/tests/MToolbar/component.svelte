@@ -1,11 +1,11 @@
 <script>
   import {
-    VToolbar,
-    VToolbarTitle,
-    VToolbarSideIcon,
-    VToolbarItems,
-    VDivider,
-    VBtn
+    MToolbar,
+    MToolbarTitle,
+    MToolbarSideIcon,
+    MToolbarItems,
+    MDivider,
+    MBtn
   } from '../../../../svelteify/dist/svelteify'
 
   export let props
@@ -15,14 +15,14 @@
   }
 </script>
 
-<VToolbar {...props}>
-  <VToolbarSideIcon {...props} on:click="{handleClick}" />
-  <VToolbarTitle>Toolbar !</VToolbarTitle>
+<MToolbar {...props}>
+  <MToolbarSideIcon {...props} on:click="{handleClick}" />
+  <MToolbarTitle>Toolbar !</MToolbarTitle>
   <div class="spacer" />
-  <VToolbarItems>
-    <VBtn flat>Link 1</VBtn>
-    <VDivider vertical classes="mx-2" />
-    <VBtn flat>Link 2</VBtn>
-  </VToolbarItems>
+  <MToolbarItems>
+    <MBtn flat>Link 1</MBtn>
+    <MDivider vertical classes="mx-2" />
+    <MBtn flat>Link 2</MBtn>
+  </MToolbarItems>
   <div slot="extension">Extension !</div>
-</VToolbar>
+</MToolbar>

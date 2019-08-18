@@ -1,4 +1,4 @@
-const VAvatarTests = [
+const MAvatarTests = [
   {
     name: 'Normal-size avatar',
     props: {}
@@ -23,4 +23,4 @@ const VAvatarTests = [
   }
 ]
 
-export default VAvatarTests
+export default MAvatarTests

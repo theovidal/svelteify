@@ -1,19 +1,19 @@
 <script>
   import {
-    VCard,
-    VContainer,
-    VLayout,
-    VFlex,
-    VDivider,
-    VList,
-    VListTile,
-    VListTileAction,
-    VListTileContent,
-    VListTileTitle,
-    VListTileSubTitle,
-    VListTileAvatar,
-    VAvatar,
-    VIcon
+    MCard,
+    MContainer,
+    MLayout,
+    MFlex,
+    MDivider,
+    MList,
+    MListTile,
+    MListTileAction,
+    MListTileContent,
+    MListTileTitle,
+    MListTileSubTitle,
+    MListTileAvatar,
+    MAvatar,
+    MIcon
   } from '../../../../svelteify/dist/svelteify'
 
   export let props
@@ -38,48 +38,48 @@
   ]
 </script>
 
-<VContainer grid_list="md">
-  <VLayout column>
-    <VFlex size="xs12">
-      <VCard>
-        <VList {...props}>
+<MContainer grid_list="md">
+  <MLayout column>
+    <MFlex size="xs12">
+      <MCard>
+        <MList {...props}>
           {#each users as user}
-          <VListTile>
-            <VListTileAction>
-              <VIcon color="primary">star</VIcon>
-            </VListTileAction>
+          <MListTile>
+            <MListTileAction>
+              <MIcon color="primary">star</MIcon>
+            </MListTileAction>
 
-            <VListTileContent>
-              <VListTileTitle>{user.name}</VListTileTitle>
-            </VListTileContent>
+            <MListTileContent>
+              <MListTileTitle>{user.name}</MListTileTitle>
+            </MListTileContent>
 
-            <VListTileAvatar>
+            <MListTileAvatar>
               <img src="{user.avatar}" alt="{user.name}" />
-            </VListTileAvatar>
-          </VListTile>
-          <VDivider />
+            </MListTileAvatar>
+          </MListTile>
+          <MDivider />
           {/each}
-        </VList>
-      </VCard>
-    </VFlex>
+        </MList>
+      </MCard>
+    </MFlex>
 
-    <VFlex size="xs12">
-      <VCard>
-        <VList two_line>
+    <MFlex size="xs12">
+      <MCard>
+        <MList two_line>
           {#each users as user}
-          <VListTile>
-            <VListTileAvatar>
+          <MListTile>
+            <MListTileAvatar>
               <img src="{user.avatar}" alt="{user.name}" />
-            </VListTileAvatar>
+            </MListTileAvatar>
 
-            <VListTileContent>
-              <VListTileTitle>{user.name}</VListTileTitle>
-              <VListTileSubTitle>{user.description}</VListTileSubTitle>
-            </VListTileContent>
-          </VListTile>
+            <MListTileContent>
+              <MListTileTitle>{user.name}</MListTileTitle>
+              <MListTileSubTitle>{user.description}</MListTileSubTitle>
+            </MListTileContent>
+          </MListTile>
           {/each}
-        </VList>
-      </VCard>
-    </VFlex>
-  </VLayout>
-</VContainer>
+        </MList>
+      </MCard>
+    </MFlex>
+  </MLayout>
+</MContainer>

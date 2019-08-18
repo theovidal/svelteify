@@ -1,67 +1,67 @@
-import VAvatar from './VAvatar/component.svelte'
-import VAvatarTests from './VAvatar/tests'
+import MAvatar from './MAvatar/component.svelte'
+import MAvatarTests from './MAvatar/tests'
 
-import VBtn from './VBtn/component.svelte'
-import VBtnTests from './VBtn/tests'
+import MBtn from './MBtn/component.svelte'
+import MBtnTests from './MBtn/tests'
 
-import VCard from './VCard/component.svelte'
-import VCardTests from './VCard/tests'
+import MCard from './MCard/component.svelte'
+import MCardTests from './MCard/tests'
 
-import VChip from './VChip/component.svelte'
-import VChipTests from './VChip/tests'
+import MChip from './MChip/component.svelte'
+import MChipTests from './MChip/tests'
 
-import VFooter from './VFooter/component.svelte'
-import VFooterTests from './VFooter/tests'
+import MFooter from './MFooter/component.svelte'
+import MFooterTests from './MFooter/tests'
 
-import VIcon from './VIcon/component.svelte'
-import VIconTests from './VIcon/tests'
+import MIcon from './MIcon/component.svelte'
+import MIconTests from './MIcon/tests'
 
-import VList from './VList/component.svelte'
-import VListTests from './VList/tests'
+import MList from './MList/component.svelte'
+import MListTests from './MList/tests'
 
-import VToolbar from './VToolbar/component.svelte'
-import VToolbarTests from './VToolbar/tests'
+import MToolbar from './MToolbar/component.svelte'
+import MToolbarTests from './MToolbar/tests'
 
 const tests = [
   {
     name: 'Avatar tests',
-    component: VAvatar,
-    tests: VAvatarTests
+    component: MAvatar,
+    tests: MAvatarTests
   },
   {
     name: 'Button tests',
-    component: VBtn,
-    tests: VBtnTests
+    component: MBtn,
+    tests: MBtnTests
   },
   {
     name: 'Card tests',
-    component: VCard,
-    tests: VCardTests
+    component: MCard,
+    tests: MCardTests
   },
   {
     name: 'Chips tests',
-    component: VChip,
-    tests: VChipTests
+    component: MChip,
+    tests: MChipTests
   },
   {
     name: 'Footer tests',
-    component: VFooter,
-    tests: VFooterTests
+    component: MFooter,
+    tests: MFooterTests
   },
   {
     name: 'Icon tests',
-    component: VIcon,
-    tests: VIconTests
+    component: MIcon,
+    tests: MIconTests
   },
   {
     name: 'List tests',
-    component: VList,
-    tests: VListTests
+    component: MList,
+    tests: MListTests
   },
   {
     name: 'Toolbar tests',
-    component: VToolbar,
-    tests: VToolbarTests
+    component: MToolbar,
+    tests: MToolbarTests
   }
 ]
 

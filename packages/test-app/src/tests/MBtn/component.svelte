@@ -1,5 +1,5 @@
 <script>
-  import { VBtn } from '../../../../svelteify/dist/svelteify'
+  import { MBtn } from '../../../../svelteify/dist/svelteify'
 
   export let props
   export let default_slot = true
@@ -10,7 +10,7 @@
   }
 </script>
 
-<VBtn {...props} on:click="{handleClick}">
+<MBtn {...props} on:click="{handleClick}">
   {#if default_slot}Example button{/if}
   <slot />
-</VBtn>
+</MBtn>

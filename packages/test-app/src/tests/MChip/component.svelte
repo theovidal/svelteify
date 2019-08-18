@@ -1,11 +1,11 @@
 <script>
-  import { VChip } from '../../../../svelteify/dist/svelteify.js'
+  import { MChip } from '../../../../svelteify/dist/svelteify.js'
 
   export let props
   export let default_slot = true
 </script>
 
-<VChip {...props}>
+<MChip {...props}>
   {#if default_slot}Example chip{/if}
   <slot />
-</VChip>
+</MChip>

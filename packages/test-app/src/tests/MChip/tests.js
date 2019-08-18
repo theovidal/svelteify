@@ -1,6 +1,6 @@
-import { VIcon, VAvatar } from '../../../../svelteify/dist/svelteify'
+import { MIcon, MAvatar } from '../../../../svelteify/dist/svelteify'
 
-const VChipTests = [
+const MChipTests = [
   {
     name: 'Basic chip',
     props: {}
@@ -43,7 +43,7 @@ const VChipTests = [
     props: {},
     children: [
       {
-        component: VIcon,
+        component: MIcon,
         slot: 'edit',
         props: {
           right: true
@@ -57,7 +57,7 @@ const VChipTests = [
     default_slot: false,
     children: [
       {
-        component: VAvatar,
+        component: MAvatar,
         slot: 'A',
         props: {
           color: 'teal'
@@ -67,4 +67,4 @@ const VChipTests = [
   }
 ]
 
-export default VChipTests
+export default MChipTests

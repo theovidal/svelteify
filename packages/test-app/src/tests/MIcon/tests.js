@@ -1,4 +1,4 @@
-const VIconTests = [
+const MIconTests = [
   {
     name: 'Default size',
     props: {}
@@ -47,4 +47,4 @@ const VIconTests = [
   }
 ]
 
-export default VIconTests
+export default MIconTests

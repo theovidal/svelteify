@@ -1,6 +1,6 @@
-import { VIcon } from '../../../../svelteify/dist/svelteify'
+import { MIcon } from '../../../../svelteify/dist/svelteify'
 
-const VBtnTests = [
+const MBtnTests = [
   {
     name: 'Colored button',
     props: {
@@ -81,7 +81,7 @@ const VBtnTests = [
     props: {},
     children: [
       {
-        component: VIcon,
+        component: MIcon,
         slot: 'send',
         props: {
           right: true
@@ -97,7 +97,7 @@ const VBtnTests = [
     default_slot: false,
     children: [
       {
-        component: VIcon,
+        component: MIcon,
         slot: 'edit',
         props: {}
       }
@@ -113,7 +113,7 @@ const VBtnTests = [
     default_slot: false,
     children: [
       {
-        component: VIcon,
+        component: MIcon,
         slot: 'edit',
         props: {}
       }
@@ -129,7 +129,7 @@ const VBtnTests = [
     default_slot: false,
     children: [
       {
-        component: VIcon,
+        component: MIcon,
         slot: 'edit',
         props: {}
       }
@@ -148,7 +148,7 @@ const VBtnTests = [
     default_slot: false,
     children: [
       {
-        component: VIcon,
+        component: MIcon,
         slot: 'edit',
         props: {}
       }
@@ -156,4 +156,4 @@ const VBtnTests = [
   }
 ]
 
-export default VBtnTests
+export default MBtnTests
