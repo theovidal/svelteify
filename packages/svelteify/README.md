@@ -9,57 +9,21 @@
   </a>
 </div>
 
-Welcome on the Svelteify repository ! It's a young framework which provides Material components using the Svelte framework. It is :
+Welcome to Svelteify ! It's a young framework which provides Material components using the Svelte framework. It is :
 
 - **Beautiful :** the framework works with the stylesheet of <a href="https://github.com/vuetifyjs/vuetify">Vuetify</a>, which provides clean components
 - **Customizable :** you can configure colors used across the application, and a dark mode. Moreover, you can choose which component to use.
 - **Dependencies-less :** the library includes all the compiled JavaScript and CSS, so you don't have to install anything
 
-Check out the [main package](packages/svelteify) !
+## Installation
 
-## Roadmap
+The installation of the framework is really simple. Just use npmjs :
 
-### 1.0
-
-Core features :
-
-- [X] Global theme
-- [ ] `app` properties on components
-- [ ] Documentation
-
-Components :
-
-- [X] Application
-- [X] Avatar
-- [X] Button
-- [X] Card
-- [X] Chips
-- [X] Divider
-- [X] Footer
-- [X] Grid
-- [X] Icon
-- [X] Image
-- [X] List
-- [X] Toolbar
-- [ ] Tooltip
-
-### 1.1
-
-Core features :
-
-- [ ] Icon choose
-- [ ] More theme options
-- [ ] Ripples
-
-Components :
-
-- [ ] Alerts
-- [ ] Badges
-- [ ] Bottom navigation
-- [ ] Breadcrumbs
-- [ ] Form inputs
-- [ ] Groups
-- [ ] Navigation drawer
+```bash
+npm i --dev svelteify         # NPM
+yarn install --dev svelteify  # Yarn
+```
+... and that's all ! Check out the documentation [COMING SOON] to start building your app !
 
 ## License
 
