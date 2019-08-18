@@ -1,5 +1,5 @@
 <script>
-  import { VIcon } from '../VIcon'
+  import { MIcon } from '../MIcon'
   import { theme } from '../../stores/theme'
   import { generateTheme } from '../../utils/theme'
 
@@ -65,7 +65,7 @@
     <slot />
     {#if close}
     <div class="v-chip__close" on:click="{handleClose}">
-      <VIcon {dark}>cancel</VIcon>
+      <MIcon {dark}>cancel</MIcon>
     </div>
     {/if}
   </div>
