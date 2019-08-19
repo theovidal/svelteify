@@ -5,10 +5,10 @@
   application's folder and download Svelteify from npmjs.org :
 </p>
 
-<code>
+<pre>
   npm install --dev svelteify # Using NPM<br />
   yarn add --dev svelteify # Using Yarn
-</code>
+</pre>
 
 <h2>Stylesheets</h2>
 
@@ -17,11 +17,11 @@
 <ul>
   <li>
     <strong>From the web :</strong> import the stylesheet at
-    <pre>https://svelteify.exybo.re/svelteify.css</pre>
+    <code>https://svelteify.exybo.re/svelteify.css</code>
   </li>
   <li>
     <strong>Using a CSS loader :</strong> include the
-    <pre>svelteify/dist/svelteify.css</pre>
+    <code>svelteify/dist/svelteify.css</code>
     file in your code. Don't forget to add a CSS loader in your bundler, like
     Webpack or Rollup !
   </li>
@@ -29,7 +29,7 @@
 
 <p>
   Finally, include the Roboto font and the Material Icons from Google Fonts :
+  <code>
+    https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons</code
+  >
 </p>
-<pre>
-https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons</pre
->
