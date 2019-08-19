@@ -15,6 +15,7 @@
     MCardActions
   } from 'svelteify'
   import components from './components'
+  import gettingStarted from './getting-started'
 
   let dark = true
 
@@ -22,12 +23,6 @@
     dark = !dark
   }
 </script>
-
-<style>
-  html {
-    font-size: 16px;
-  }
-</style>
 
 <MApp {dark}>
   <MToolbar fixed dense>
@@ -81,6 +76,16 @@
             </MCardActions>
           </MCard>
         </MFlex>
+        <MFlex size="xs12">
+          <h1 class="display-3">Getting started</h1>
+          <span class="headline">Base guidelines for the framework</span>
+        </MFlex>
+        {#each gettingStarted as part}
+        <MFlex size="xs12">
+          <h2 class="display-3">{part.name}</h2>
+          <svelte:component this="{part}" />
+        </MFlex>
+        {/each}
         <MFlex size="xs12">
           <h1 class="display-3">UI Components</h1>
           <span class="headline">All you need to create your app</span>
