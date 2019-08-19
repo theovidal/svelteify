@@ -7,6 +7,7 @@
   <a href="https://discord.becauseofprog.fr">
     <img src="https://img.shields.io/badge/chat-join%20now-blue.svg" />
   </a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=shield"/></a>
 </div>
 
 Welcome on the Svelteify repository ! It's a young framework which provides Material components using the Svelte framework. It is :
@@ -16,6 +17,9 @@ Welcome on the Svelteify repository ! It's a young framework which provides Mate
 - **Dependencies-less :** the library includes all the compiled JavaScript and CSS, so you don't have to install anything
 
 Check out the [main package](packages/svelteify) !
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_large)
 
 ## Roadmap
 
