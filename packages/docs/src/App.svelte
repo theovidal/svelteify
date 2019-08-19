@@ -14,6 +14,7 @@
     MCardText,
     MCardActions
   } from 'svelteify'
+  import components from './components'
 
   let dark = true
 
@@ -21,6 +22,12 @@
     dark = !dark
   }
 </script>
+
+<style>
+  html {
+    font-size: 16px;
+  }
+</style>
 
 <MApp {dark}>
   <MToolbar fixed dense>
@@ -35,7 +42,7 @@
 
   <MContent>
     <MContainer grid_list="md" classes="mt-5">
-      <MLayout>
+      <MLayout column>
         <MFlex size="xs12">
           <MCard>
             <MCardText>
@@ -74,6 +81,51 @@
             </MCardActions>
           </MCard>
         </MFlex>
+        <MFlex size="xs12">
+          <h1 class="display-3">UI Components</h1>
+          <span class="headline">All you need to create your app</span>
+        </MFlex>
+        {#each components as component}
+        <MFlex size="xs12">
+          <h2 class="display-3">{component.name}</h2>
+          <p>{component.description}</p>
+          {#each component.subcomponents as subcomponent}
+          <h2>
+            Properties for component {subcomponent.name}
+          </h2>
+          <MCard>
+            <div class="v-table__overflow">
+              <table
+                class="v-datatable v-table"
+                class:theme--light="{!dark}"
+                class:theme--dark="{dark}"
+              >
+                <thead>
+                  <tr>
+                    <th class="text-xs-left">Name</th>
+                    <th class="text-xs-left">Type</th>
+                    <th class="text-xs-left">Description</th>
+                    <th class="text-xs-left">Default value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {#each subcomponent.props as prop}
+                  <tr>
+                    <td>{prop.name}</td>
+                    <td>{prop.type}</td>
+                    <td>{prop.description}</td>
+                    <td>{prop.default}</td>
+                  </tr>
+                  {/each}
+                </tbody>
+              </table>
+            </div>
+          </MCard>
+          {/each}
+          <h3 class="display-2">Examples</h3>
+          <svelte:component this="{component.examples}" />
+        </MFlex>
+        {/each}
       </MLayout>
     </MContainer>
   </MContent>
