@@ -17,7 +17,7 @@
   import components from './components'
   import gettingStarted from './getting-started'
 
-  let dark = true
+  let dark = false
 
   function changeTheme() {
     dark = !dark
@@ -25,12 +25,23 @@
 </script>
 
 <MApp {dark}>
-  <MToolbar fixed dense>
+  <MToolbar fixed>
     <img src="/img/logo.png" height="35px" alt="Svelteify logo" />
     <MToolbarTitle>Svelteify</MToolbarTitle>
+    <div class="spacer"></div>
     <MToolbarItems>
+      <MBtn
+        flat
+        href="https://github.com/exybore/svelteify/releases"
+        classes="hidden-sm-and-down"
+        target="_blank"
+        >v1.0.0-beta2</MBtn
+      >
       <MBtn icon on:click="{changeTheme}">
         <MIcon>invert_colors</MIcon>
+      </MBtn>
+      <MBtn icon href="https://github.com/exybore/svelteify" target="_blank">
+        <MIcon>code</MIcon>
       </MBtn>
     </MToolbarItems>
   </MToolbar>
@@ -38,61 +49,78 @@
   <MContent>
     <MContainer grid_list="md" classes="mt-5">
       <MLayout column>
-        <MFlex size="xs12">
-          <MCard>
-            <MCardText>
-              <h3 class="headline mb-0">Svelteify - Documentation</h3>
-              <p>
-                Welcome to Svelteify ! It's a young framework which provides
-                Material components using the Svelte framework. It is :
-              </p>
-              <ul>
-                <li>
-                  <strong>Beautiful :</strong>
-                  the framework works with the stylesheet of
-                  <a href="https://github.com/vuetifyjs/vuetify">Vuetify</a>,
-                  which provides clean components.
-                </li>
-                <li>
-                  <strong>Customizable :</strong>
-                  you can configure colors used across the application, and a
-                  dark mode. Moreover, you can choose which component to use.
-                </li>
-                <li>
-                  <strong>Dependencies-less :</strong>
-                  the library includes all the compiled JavaScript and CSS, so
-                  you don't have to install anything.
-                </li>
-              </ul>
-            </MCardText>
-            <MCardActions>
-              <MBtn
-                flat
-                color="primary"
-                href="https://github.com/exybore/svelteify"
-              >
-                GitHub repository
-              </MBtn>
-            </MCardActions>
-          </MCard>
+        <MFlex size="xs12" classes="text-xs-center">
+          <img src="/img/logo.png" height="200px" alt="Svelteify logo" />
+          <h1 class="display-3">Svelteify</h1>
+          <h3 class="display-1">Material components framework for Svelte</h3>
         </MFlex>
         <MFlex size="xs12">
-          <h1 class="display-3">Getting started</h1>
+          <MContainer>
+            <MLayout row wrap>
+              <MFlex size="xs12 md4" classes="text-xs-center">
+                <MIcon xlarge>color_lens</MIcon>
+                <h3 class="display-1">Beautiful</h3>
+                <p>
+                  The framework works with the stylesheet of
+                  <a href="https://github.com/vuetifyjs/vuetify">Vuetify</a>,
+                  which provides clean and nice-looking components.
+                </p>
+              </MFlex>
+              <MFlex size="xs12 md4" classes="text-xs-center">
+                <MIcon xlarge>widgets</MIcon>
+                <h3 class="display-1">Customizable</h3>
+                <p>
+                  You can configure colors used across the application, and a
+                  dark mode. Moreover, you can precisely choose which component
+                  to use.
+                </p>
+              </MFlex>
+              <MFlex size="xs12 md4" classes="text-xs-center">
+                <MIcon xlarge>layers_clear</MIcon>
+                <h3 class="display-1">Dependencies-less</h3>
+                <p>
+                  The library includes all the compiled JavaScript and CSS, so
+                  you don't have to install anything or setup additional tools.
+                </p>
+              </MFlex>
+            </MLayout>
+          </MContainer>
+        </MFlex>
+        <MFlex size="xs12" classes="text-xs-center">
+          <MBtn
+            outline
+            color="primary"
+            href="https://github.com/exybore/svelteify"
+            target="_blank"
+            >Github repository</MBtn
+          ><br />
+          <a
+            class="github-button"
+            href="https://github.com/exybore/svelteify"
+            target="_blank"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star exybore/svelteify on GitHub"
+            >Star</a
+          >
+        </MFlex>
+        <MFlex size="xs12">
+          <h2 class="display-2">Getting started</h2>
           <span class="headline">Base guidelines for the framework</span>
         </MFlex>
         {#each gettingStarted as part}
         <MFlex size="xs12">
-          <h2 class="display-3">{part.name}</h2>
+          <h3 class="display-1">{part.name}</h3>
           <svelte:component this="{part}" />
         </MFlex>
         {/each}
         <MFlex size="xs12">
-          <h1 class="display-3">UI Components</h1>
+          <h2 class="display-2">UI Components</h2>
           <span class="headline">All you need to create your app</span>
         </MFlex>
         {#each components as component}
         <MFlex size="xs12">
-          <h2 class="display-3">{component.name}</h2>
+          <h3 class="display-1">{component.name}</h3>
           <p>{component.description}</p>
           {#each component.subcomponents as subcomponent}
           <h2>
@@ -127,7 +155,7 @@
             </div>
           </MCard>
           {/each}
-          <h3 class="display-2">Examples</h3>
+          <h3 class="display-1">Examples</h3>
           <svelte:component this="{component.examples}" />
         </MFlex>
         {/each}
