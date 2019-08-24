@@ -24,20 +24,23 @@
     "url": "https://github.com/exybore/svelteify"
   },
   "license": "MIT",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0-beta3",
   "main": "dist/svelteify.js",
+  "files": [
+    "dist/"
+  ],
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "rollup": "^1.10.1",
-    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup": "^1.20.1",
+    "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-css-porter": "^1.0.2",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^4.0.4",
-    "sirv-cli": "^0.4.0",
-    "svelte": "^3.0.0",
+    "rollup-plugin-livereload": "^1.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "sirv-cli": "^0.4.4",
+    "svelte": "^3.9.1",
     "vuetify": "^1.5.14"
   },
   "scripts": {
