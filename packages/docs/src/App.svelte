@@ -25,22 +25,27 @@
 </script>
 
 <MApp {dark}>
-  <MToolbar fixed>
-    <img src="/img/logo.png" height="35px" alt="Svelteify logo" />
+  <MToolbar fixed color="primary white--text">
     <MToolbarTitle>Svelteify</MToolbarTitle>
     <div class="spacer"></div>
     <MToolbarItems>
       <MBtn
         flat
+        color="white--text"
         href="https://github.com/exybore/svelteify/releases"
         classes="hidden-sm-and-down"
         target="_blank"
         >v1.0.0-beta3</MBtn
       >
-      <MBtn icon on:click="{changeTheme}">
+      <MBtn color="white--text" icon on:click="{changeTheme}">
         <MIcon>invert_colors</MIcon>
       </MBtn>
-      <MBtn icon href="https://github.com/exybore/svelteify" target="_blank">
+      <MBtn
+        color="white--text"
+        icon
+        href="https://github.com/exybore/svelteify"
+        target="_blank"
+      >
         <MIcon>code</MIcon>
       </MBtn>
     </MToolbarItems>
@@ -58,7 +63,7 @@
           <MContainer>
             <MLayout row wrap>
               <MFlex size="xs12 md4" classes="text-xs-center">
-                <MIcon xlarge>color_lens</MIcon>
+                <MIcon xlarge color="primary">color_lens</MIcon>
                 <h3 class="display-1">Beautiful</h3>
                 <p>
                   The framework works with the stylesheet of
@@ -67,7 +72,7 @@
                 </p>
               </MFlex>
               <MFlex size="xs12 md4" classes="text-xs-center">
-                <MIcon xlarge>widgets</MIcon>
+                <MIcon xlarge color="primary">widgets</MIcon>
                 <h3 class="display-1">Customizable</h3>
                 <p>
                   You can configure colors used across the application, and a
@@ -76,33 +81,32 @@
                 </p>
               </MFlex>
               <MFlex size="xs12 md4" classes="text-xs-center">
-                <MIcon xlarge>layers_clear</MIcon>
+                <MIcon xlarge color="primary">layers_clear</MIcon>
                 <h3 class="display-1">Dependencies-less</h3>
                 <p>
                   The library includes all the compiled JavaScript and CSS, so
                   you don't have to install anything or setup additional tools.
                 </p>
               </MFlex>
+              <MFlex size="xs12" classes="text-xs-center">
+                <MBtn
+                  color="primary white--text"
+                  href="https://github.com/exybore/svelteify"
+                  target="_blank"
+                  >Github repository</MBtn
+                ><br />
+                <a
+                  class="github-button"
+                  href="https://github.com/exybore/svelteify"
+                  target="_blank"
+                  data-size="large"
+                  data-show-count="true"
+                  aria-label="Star exybore/svelteify on GitHub"
+                  >Star</a
+                >
+              </MFlex>
             </MLayout>
           </MContainer>
-        </MFlex>
-        <MFlex size="xs12" classes="text-xs-center">
-          <MBtn
-            outline
-            color="primary"
-            href="https://github.com/exybore/svelteify"
-            target="_blank"
-            >Github repository</MBtn
-          ><br />
-          <a
-            class="github-button"
-            href="https://github.com/exybore/svelteify"
-            target="_blank"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star exybore/svelteify on GitHub"
-            >Star</a
-          >
         </MFlex>
         <MFlex size="xs12">
           <h2 class="display-2">Getting started</h2>
