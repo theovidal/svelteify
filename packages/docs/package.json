@@ -14,7 +14,7 @@
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.1",
     "svelte": "^3.9.1",
-    "svelteify": "^1.0.0-beta2"
+    "svelteify": "^1.0.0-beta3"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"

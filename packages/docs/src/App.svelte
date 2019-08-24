@@ -35,7 +35,7 @@
         href="https://github.com/exybore/svelteify/releases"
         classes="hidden-sm-and-down"
         target="_blank"
-        >v1.0.0-beta2</MBtn
+        >v1.0.0-beta3</MBtn
       >
       <MBtn icon on:click="{changeTheme}">
         <MIcon>invert_colors</MIcon>
