@@ -7,6 +7,7 @@
   export let classes = ''
   export let color = ''
   export let dark = false
+  export let href = '#!'
   export let light = false
 
   // Theme-related operations
@@ -29,6 +30,7 @@
     class:v-list__tile--avatar="{avatar}"
     class:theme--dark="{darkTheme}"
     class:theme--light="{!darkTheme}"
+    {href}
   >
     <slot />
   </a>
