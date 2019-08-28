@@ -2,6 +2,7 @@
   import { theme } from '../../stores/theme'
   import { generateTheme } from '../../utils/theme'
 
+  export let app = false
   export let absolute = false
   export let card = false
   export let classes = ''
@@ -54,9 +55,20 @@
   :global(.v-toolbar + .v-navigation-drawer--clipped) {
     margin-top: 58px;
   }
+
+  :global(#app-toolbar.v-toolbar.v-toolbar--dense ~ .v-content) {
+    margin-top: 48px;
+  }
+  :global(#app-toolbar.v-toolbar.v-toolbar--extended ~ .v-content) {
+    margin-top: 64px;
+  }
+  :global(#app-toolbar.v-toolbar ~ .v-content) {
+    margin-top: 58px;
+  }
 </style>
 
 <div
+  id="{app ? 'app-toolbar' : ''}"
   class="v-toolbar {strColors} {classes}"
   class:v-toolbar--absolute="{absolute}"
   class:v-toolbar--card="{card}"

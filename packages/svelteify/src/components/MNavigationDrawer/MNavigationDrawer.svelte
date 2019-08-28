@@ -3,6 +3,7 @@
   import { generateTheme } from '../../utils/theme'
 
   // Component properties
+  export let app = false
   export let absolute = false
   export let classes = ''
   export let clipped = false
@@ -14,7 +15,7 @@
   export let light = false
   export let mini = false
   export let right = false
-  export let width = 'auto'
+  export let width = '300px'
 
   if (mini) {
     width = '80px'
@@ -34,7 +35,18 @@
   }
 </script>
 
+<style>
+  :global(#app-drawer.v-navigation-drawer ~ .v-content) {
+    margin-left: 300px;
+  }
+  :global(#app-drawer.v-navigation-drawer.v-navigation-drawer--right
+      ~ .v-content) {
+    margin-right: 300px;
+  }
+</style>
+
 <aside
+  id="{app ? 'app-drawer' : ''}"
   class="v-navigation-drawer {strColors} {classes}"
   class:v-navigation-drawer--absolute="{absolute}"
   class:v-navigation-drawer--clipped="{clipped}"
