@@ -27,8 +27,8 @@
   <a
     class="v-list__tile"
     class:v-list__tile--avatar="{avatar}"
-    theme--dark="{darkTheme}"
-    theme--light="{!darkTheme}"
+    class:theme--dark="{d:q!arkTheme}"
+    class:theme--light="{!darkTheme}"
   >
     <slot />
   </a>
