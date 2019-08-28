@@ -15,7 +15,13 @@
     MContent,
     MFlex,
     MLayout,
-    MBtn
+    MBtn,
+    MNavigationDrawer,
+    MList,
+    MListTile,
+    MListTileTitle,
+    MListTileContent,
+    MDivider
   } from '../../svelteify/dist/svelteify.js'
   import tests from './tests'
 
@@ -27,7 +33,7 @@
 </script>
 
 <MApp {dark}>
-  <MToolbar fixed dense>
+  <MToolbar app fixed dense>
     <MToolbarTitle>Svelteify test</MToolbarTitle>
     <MToolbarItems>
       <MBtn icon on:click="{changeTheme}">
@@ -36,8 +42,21 @@
     </MToolbarItems>
   </MToolbar>
 
+  <MNavigationDrawer app fixed clipped height="100%">
+    <MList>
+      {#each tests as test}
+      <MListTile href="#{test.name}">
+        <MListTileContent>
+          <MListTileTitle>{test.name}</MListTileTitle>
+        </MListTileContent>
+      </MListTile>
+      <MDivider />
+      {/each}
+    </MList>
+  </MNavigationDrawer>
+
   <MContent>
-    <MContainer grid_list="md" classes="mt-5">
+    <MContainer grid_list="md">
       <MLayout>
         <MFlex size="xs12">
           <MCard>
@@ -49,11 +68,6 @@
                 order to test a maximum of them and see if there are bugs.
               </div>
             </MCardTitle>
-            <MCardActions>
-              {#each tests as test}
-              <MBtn flat color="primary" href="#{test.name}">{test.name}</MBtn>
-              {/each}
-            </MCardActions>
           </MCard>
         </MFlex>
       </MLayout>
