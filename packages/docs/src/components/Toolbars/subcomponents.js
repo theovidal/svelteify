@@ -3,6 +3,13 @@ const ToolbarSubcomponents = [
     name: 'MToolbar',
     props: [
       {
+        name: 'app',
+        description:
+          "Adjusts content's margins so the toolbar is well integrated",
+        type: 'boolean',
+        default: 'false'
+      },
+      {
         name: 'absolute',
         description: 'Applies an absolute position to the toolbar',
         type: 'boolean',
