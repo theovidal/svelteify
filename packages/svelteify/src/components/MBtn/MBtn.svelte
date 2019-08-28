@@ -1,5 +1,4 @@
 <script>
-  import { createEventDispatcher } from 'svelte'
   import { theme } from '../../stores/theme'
   import { generateTheme } from '../../utils/theme'
 
@@ -42,15 +41,6 @@
   } else {
     darkTheme = $theme.dark
   }
-
-  // Events dispatch
-  const dispatch = createEventDispatcher()
-
-  function dispatchClick(event) {
-    dispatch('click', {
-      event
-    })
-  }
 </script>
 
 <a
@@ -77,7 +67,8 @@
   {href}
   {target}
   {style}
-  on:click="{dispatchClick}"
+  on:click
+  on:hover
 >
   <div class="v-btn__content">
     <slot />
