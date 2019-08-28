@@ -19,6 +19,9 @@ import MIconTests from './MIcon/tests'
 import MList from './MList/component.svelte'
 import MListTests from './MList/tests'
 
+import MNavigationDrawer from './MNavigationDrawer/component.svelte'
+import MNavigationDrawerTests from './MNavigationDrawer/tests'
+
 import MToolbar from './MToolbar/component.svelte'
 import MToolbarTests from './MToolbar/tests'
 
@@ -57,6 +60,11 @@ const tests = [
     name: 'List tests',
     component: MList,
     tests: MListTests
+  },
+  {
+    name: 'Navigation drawer tests',
+    component: MNavigationDrawer,
+    tests: MNavigationDrawerTests
   },
   {
     name: 'Toolbar tests',
