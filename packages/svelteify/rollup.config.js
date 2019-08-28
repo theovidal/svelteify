@@ -16,6 +16,10 @@ export default {
     file: 'dist/svelteify.js'
   },
   plugins: [
+    css({
+      raw: false,
+      minified: 'dist/vuetify.css'
+    }),
     svelte({
       // enable run-time checks when not in production
       dev: !production,
@@ -24,10 +28,6 @@ export default {
       css: css => {
         css.write('dist/svelteify.css')
       }
-    }),
-    css({
-      raw: false,
-      minified: 'dist/svelteify.css'
     }),
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
