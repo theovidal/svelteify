@@ -5,6 +5,7 @@
   // Component properties
   export let absolute = false
   export let classes = ''
+  export let clipped = false
   export let color = ''
   export let dark = false
   export let fixed = false
@@ -36,6 +37,7 @@
 <aside
   class="v-navigation-drawer {strColors} {classes}"
   class:v-navigation-drawer--absolute="{absolute}"
+  class:v-navigation-drawer--clipped="{clipped}"
   class:v-navigation-drawer--fixed="{fixed}"
   class:v-navigation-drawer--floating="{floating}"
   class:v-navigation-drawer--mini-variant="{mini}"

@@ -10,3 +10,13 @@
 .v-toolbar__extension.v-toolbar--tabs {
   height: 48px;
 }
+
+.v-toolbar.v-toolbar--dense + .v-navigation-drawer--clipped {
+  margin-top: 48px;
+}
+.v-toolbar.v-toolbar--extended + .v-navigation-drawer--clipped {
+  margin-top: 64px;
+}
+.v-toolbar + .v-navigation-drawer--clipped {
+  margin-top: 58px;
+}
