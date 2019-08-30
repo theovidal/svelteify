@@ -5,7 +5,7 @@
 </script>
 
 <MCard {...props}>
-  <MImg src="foto.jpg" />
+  <MImg src="/img/placeholder_photo.jpg" />
   <MCardTitle primary_title>
     <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
     <div>

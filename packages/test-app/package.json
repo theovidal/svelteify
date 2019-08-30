@@ -1,6 +1,6 @@
 {
   "name": "svelteify-test-app",
-  "description": "The platform where all Svelteify components are tested.",
+  "description": "Testing application for the Svelteify library",
   "private": true,
   "version": "1.0.0",
   "devDependencies": {

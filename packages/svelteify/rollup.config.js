@@ -14,10 +14,7 @@ export default {
   },
   plugins: [
     svelte({
-      // enable run-time checks when not in production
       dev: false,
-      // we'll extract any component CSS out into
-      // a separate file  better for performance
       css: css => {
         css.write('dist/svelteify.css')
       }
@@ -27,11 +24,6 @@ export default {
       extract: true,
       minimize: true
     }),
-    // If you have external dependencies installed from
-    // npm, you'll most likely need these plugins. In
-    // some cases you'll need additional configuration 
-    // consult the documentation for details:
-    // https://github.com/rollup/rollup-plugin-commonjs
     resolve({ browser: true }),
     commonjs(),
     terser()
