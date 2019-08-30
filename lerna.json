@@ -3,14 +3,17 @@
     "packages/*"
   ],
   "version": "independent",
-  "npmClient": "yarn",
   "command": {
     "publish": {
       "allowBranch": [
-        "master",
-        "develop"
+        "master"
       ],
       "message": "chore(release): publish %s"
+    },
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
     }
   }
 }

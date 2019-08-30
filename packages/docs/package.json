@@ -8,13 +8,13 @@
     "prismjs": "^1.17.1",
     "rollup": "^1.20.1",
     "rollup-plugin-commonjs": "^10.0.2",
-    "rollup-plugin-css-porter": "^1.0.2",
+    "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-livereload": "^1.0.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.1",
     "svelte": "^3.9.1",
-    "svelteify": "^1.0.0-beta3"
+    "svelteify": "^1.0.0-beta4"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"
