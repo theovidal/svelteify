@@ -17,8 +17,15 @@
   <a href="https://github.com/exybore/svelteify/stargazers">
     <img src="https://img.shields.io/github/stars/exybore/svelteify?style=social"/>
   </a>
-<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=shield"/></a>
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=shield"/></a>
+  <a href="https://lerna.js.org"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="maintained with lerna"/></a>
 </div>
+
+- [📦 Packages](#-packages)
+- [💻 Developing](#-developing)
+- [✨ Contributing](#-contributing)
+- [📜 Credits](#-credits)
+- [🔐 License](#-license)
 
 Welcome on the Svelteify repository ! It's a young framework which provides Material components using the Svelte framework. It is :
 
@@ -26,10 +33,48 @@ Welcome on the Svelteify repository ! It's a young framework which provides Mate
 - **Customizable :** you can configure colors used across the application, and a dark mode. Moreover, you can choose which component to use.
 - **Dependencies-less :** the library includes all the compiled JavaScript and CSS, so you don't have to install anything
 
-Check out the [main package](packages/svelteify) !
+## 📦 Packages
 
+All the packages are managed using lerna and stored in the `packages` directory :
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_large)
+- [docs](packages/docs) : the documentation for the library
+- [svelteify](packages/svelteify) : the main library
+- [test-app](packages/test-app) : the application to test all components and properties
+
+## 💻 Developing
+
+Make sure you have [node.js 10 or later](https://nodejs.org), and [lerna](https://github.com/lerna/lerna).
+
+First of all, install all the required dependencies :
+
+```bash
+npm install   # Using NPM
+yarn install  # Using Yarn
+```
+
+Then, bootstrap the dependencies using lerna :
+
+```bash
+lerna bootstrap
+```
+
+To build the library, go into its folder and run the `build` script :
+
+```bash
+npm run build  # Using NPM
+yarn build     # Using Yarn
+```
+
+To run the testing app or the documentation with live reload, go into its folder and run the `dev` script :
+
+```bash
+npm run dev  # Using NPM
+yarn dev     # Using Yarn
+```
+
+## ✨ Contributing
+
+Please refer to the [contributing file](CONTRIBUTING.md).
 
 ## Roadmap
 
@@ -38,7 +83,7 @@ Check out the [main package](packages/svelteify) !
 Core features :
 
 - [x] Global theme
-- [ ] `app` properties on components
+- [x] `app` properties on components
 - [ ] Documentation
 
 Components :
@@ -54,7 +99,7 @@ Components :
 - [x] Icon
 - [x] Image
 - [x] List
-- [ ] Navigation drawers
+- [x] Navigation drawers
 - [ ] Tables
 - [x] Toolbar
 - [ ] Tooltip
@@ -75,9 +120,13 @@ Components :
 - [ ] Breadcrumbs
 - [ ] Form inputs
 - [ ] Groups
-- [ ] Navigation drawer
 
-## License
+## 📜 Credits
+
+- Libraries : [Svelte](https://svelte.dev), [Vuetify](https://vuetifyjs.com)
+- Maintainer : [Exybore](https://github.com/exybore)
+
+## 🔐 License
 
 MIT License
 
@@ -100,3 +149,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_large)

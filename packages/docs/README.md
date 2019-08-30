@@ -1,68 +1,10 @@
-*Psst  looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+<div align="center">
+  <img src="https://github.com/exybore/svelteify/blob/develop/packages/docs/public/img/logo.png?raw=true" alt="logo" width="150" />
+  <h1>Documentation for the Svelteify library</h1>
+  <h3><a href="https://svelteify.exybo.re">svelteify.exybo.re</a></h3>
+  <a href="https://app.netlify.com/sites/svelteify/deploys"><img src="https://api.netlify.com/api/v1/badges/f80deeaa-a5b2-4317-8dd0-5504806c4496/deploy-status" alt="netlify bstatus"></a>
+</div>
 
----
+## Developing
 
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
-```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+Instructions are described in the [root README](../../README.md#-developing)

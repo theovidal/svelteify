@@ -17,6 +17,8 @@
   <a href="https://github.com/exybore/svelteify/stargazers">
     <img src="https://img.shields.io/github/stars/exybore/svelteify?style=social"/>
   </a>
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=shield"/></a>
+  <a href="https://lerna.js.org"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="maintained with lerna"/></a>
 </div>
 
 Welcome to Svelteify ! It's a young framework which provides Material components using the Svelte framework. It is :
@@ -25,7 +27,7 @@ Welcome to Svelteify ! It's a young framework which provides Material components
 - **Customizable :** you can configure colors used across the application, and a dark mode. Moreover, you can choose which component to use.
 - **Dependencies-less :** the library includes all the compiled JavaScript and CSS, so you don't have to install anything
 
-## Installation
+## 📥 Installation
 
 The installation of the framework is really simple. Just use npmjs :
 
@@ -34,11 +36,16 @@ npm i --dev svelteify         # NPM
 yarn install --dev svelteify  # Yarn
 ```
 
-... and that's all ! Check out the documentation [COMING SOON] to start building your app !
+... and that's all ! Now, head over to the [documentation](https://svelteify.exybo.re) to start building your app !
+
+## 📜 Credits
+
+- Libraries : [Svelte](https://svelte.dev), [Vuetify](https://vuetifyjs.com)
+- Maintainer : [Exybore](https://github.com/exybore)
 
 ## License
 
-MIT License
+MIT 🔐 License
 
 Copyright (c) 2019 Exybore
 
@@ -59,3 +66,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Fsvelteify?ref=badge_large)

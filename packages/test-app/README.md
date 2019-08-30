@@ -1,6 +1,8 @@
-<div align=center>
-  <img src="./logo.png" alt="logo" width="150" />
-  <h2>Svelteify test application</h2>
+<div align="center">
+  <img src="https://github.com/exybore/svelteify/blob/develop/packages/docs/public/img/logo.png?raw=true" alt="logo" width="150" />
+  <h1>Testing application for the Svelteify library</h1>
 </div>
 
-This package is a simple website in order to test every component and their options.
+## Developing
+
+Instructions are described in the [root README](../../README.md#-developing)
