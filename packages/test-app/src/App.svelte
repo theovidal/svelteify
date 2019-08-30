@@ -22,7 +22,7 @@
     MListTileTitle,
     MListTileContent,
     MDivider
-  } from '../../svelteify/dist/svelteify.js'
+  } from 'svelteify'
   import tests from './tests'
 
   let dark = true

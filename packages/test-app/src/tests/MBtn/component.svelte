@@ -1,5 +1,5 @@
 <script>
-  import { MBtn } from '../../../../svelteify/dist/svelteify'
+  import { MBtn } from 'svelteify'
 
   export let props
   export let default_slot = true

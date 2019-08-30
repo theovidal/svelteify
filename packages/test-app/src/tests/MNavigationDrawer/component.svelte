@@ -9,7 +9,7 @@
     MListTileAvatar,
     MDivider,
     MIcon
-  } from '../../../../svelteify/dist/svelteify'
+  } from 'svelteify'
 
   export let props
 </script>

@@ -35,16 +35,6 @@
   }
 </script>
 
-<style>
-  :global(#app-drawer.v-navigation-drawer ~ .v-content) {
-    margin-left: 300px;
-  }
-  :global(#app-drawer.v-navigation-drawer.v-navigation-drawer--right
-      ~ .v-content) {
-    margin-right: 300px;
-  }
-</style>
-
 <aside
   id="{app ? 'app-drawer' : ''}"
   class="v-navigation-drawer {strColors} {classes}"

@@ -1,5 +1,5 @@
 <script>
-  import { MIcon } from '../../../../svelteify/dist/svelteify'
+  import { MIcon } from 'svelteify'
 
   export let props
 </script>

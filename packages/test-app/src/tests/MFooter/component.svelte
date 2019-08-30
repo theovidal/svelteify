@@ -1,5 +1,5 @@
 <script>
-  import { MFooter } from '../../../../svelteify/dist/svelteify'
+  import { MFooter } from 'svelteify'
 
   export let props
   export let default_slot = true

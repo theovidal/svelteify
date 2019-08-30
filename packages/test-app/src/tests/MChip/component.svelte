@@ -1,5 +1,5 @@
 <script>
-  import { MChip } from '../../../../svelteify/dist/svelteify.js'
+  import { MChip } from 'svelteify'
 
   export let props
   export let default_slot = true

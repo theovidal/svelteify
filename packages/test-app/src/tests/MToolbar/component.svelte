@@ -6,7 +6,7 @@
     MToolbarItems,
     MDivider,
     MBtn
-  } from '../../../../svelteify/dist/svelteify'
+  } from 'svelteify'
 
   export let props
 

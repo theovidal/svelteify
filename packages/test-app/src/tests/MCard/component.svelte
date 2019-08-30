@@ -1,11 +1,5 @@
 <script>
-  import {
-    MCard,
-    MCardTitle,
-    MCardActions,
-    MBtn,
-    MImg
-  } from '../../../../svelteify/dist/svelteify'
+  import { MCard, MCardTitle, MCardActions, MBtn, MImg } from 'svelteify'
 
   export let props
 </script>

@@ -1,3 +1,3 @@
-import 'vuetify/dist/vuetify.css'
+import 'vuetify/dist/vuetify.min.css'
 
 export * from './components/index'

@@ -1,5 +1,5 @@
 <script>
-  import { MAvatar } from '../../../../svelteify/dist/svelteify.js'
+  import { MAvatar } from 'svelteify'
 
   export let props
 </script>

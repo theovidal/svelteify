@@ -1,0 +1,7 @@
+#app-drawer.v-navigation-drawer ~ .v-content {
+  margin-left: 300px;
+}
+#app-drawer.v-navigation-drawer.v-navigation-drawer--right
+    ~ .v-content {
+  margin-right: 300px;
+}
