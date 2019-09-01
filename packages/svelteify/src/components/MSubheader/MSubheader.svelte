@@ -5,6 +5,8 @@
   export let inset = false
   export let light = false
 
+  let darkTheme = false
+
   $: if (dark) {
     darkTheme = true
   } else if (light) {
