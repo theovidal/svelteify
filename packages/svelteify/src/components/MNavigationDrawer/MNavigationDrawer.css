@@ -1,7 +1,7 @@
-#app-drawer.v-navigation-drawer ~ .v-content {
+#app-drawer.v-navigation-drawer.v-navigation-drawer--open ~ .v-content {
   margin-left: 300px;
 }
-#app-drawer.v-navigation-drawer.v-navigation-drawer--right
+#app-drawer.v-navigation-drawer.v-navigation-drawer--right.v-navigation-drawer--open
     ~ .v-content {
   margin-right: 300px;
 }
