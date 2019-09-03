@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte'
+import { eslint } from 'rollup-plugin-eslint'
 import postcss from 'rollup-plugin-postcss'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
@@ -13,6 +14,7 @@ export default {
     file: 'dist/svelteify.js'
   },
   plugins: [
+    eslint(),
     svelte({
       dev: false,
       css: css => {
