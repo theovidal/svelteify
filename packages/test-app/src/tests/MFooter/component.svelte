@@ -9,6 +9,6 @@
   <slot />
   {#if default_slot}
   <div class="spacer"></div>
-  <div>© 2019</div>
+  <div>© 2019-present</div>
   {/if}
 </MFooter>

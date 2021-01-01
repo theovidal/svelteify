@@ -104,6 +104,6 @@
       About
     </MBtn>
     <div class="spacer"></div>
-    <div>© 2019</div>
+    <div>© 2019-present</div>
   </MFooter>
 </MApp>

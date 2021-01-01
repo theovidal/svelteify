@@ -40,7 +40,7 @@ yarn install --dev svelteify  # Yarn
 
 MIT License
 
-Copyright (c) 2019 Exybore
+Copyright (c) 2019-present Théo Vidal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
